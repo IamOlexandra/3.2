@@ -12,7 +12,7 @@ import TransactionHistory from "./components/transaction_history/TransactionHist
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Profile data={userData}/>
       <Statistics title="Upload stats" stats={statisticsData}/>
       <FriendList friends={friendsData}/>

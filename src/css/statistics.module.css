@@ -1,0 +1,63 @@
+@import "@fontsource/lato";
+
+:root {
+    --background: #fff;
+    --title: #50575D;
+    --first-stat: #4FC5F7;
+    --second-stat: #A43CF3;
+    --third-stat: #E64C66;
+    --fourth-stat: #20B8C5;
+    --fifth-stat: #8cdf34;
+}
+
+.statistics {
+    min-width: 268px;
+    width: min-content;
+    background-color: var(--background);
+    margin: 61px auto;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.title {
+    padding: 25px 0;
+    font-size: 12px;
+    color: var(--title);
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+}
+.item {
+    min-width: 50px;
+    width: min-content;
+    flex: 1 1 0px;
+    padding: 7px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.item:nth-child(1) {
+    background-color: var(--first-stat);
+}
+.item:nth-child(2) {
+    background-color: var(--second-stat);
+}
+.item:nth-child(3) {
+    background-color: var(--third-stat);
+}
+.item:nth-child(4) {
+    background-color: var(--fourth-stat);
+}
+.item:nth-child(5) {
+    background-color: var(--fifth-stat);
+}
+.label {
+    font-size: 8px;
+    color: var(--background);
+    margin-bottom: 5px;
+}
+.percentage {
+    font-size: 12px;
+    color: var(--background);
+}

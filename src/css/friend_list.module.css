@@ -1,0 +1,56 @@
+@import "@fontsource/lato";
+
+:root {
+    --background: #fff;
+    --shadow: #a5a5a5;
+    --online: #68ab5c;
+    --not-online: #ea5f5c;
+}
+
+.friendList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+    margin: 61px auto;
+    font-family: "Lato", sans-serif;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 112px;
+    width: 100%;
+    box-shadow: 0 2.5px 4px var(--shadow);
+    background-color: var(--background);
+}
+.online, .notOnline {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+.online {
+    background-color: var(--online);
+}
+.notOnline {
+    background-color: var(--not-online);
+}
+.avatarWrap {
+    display: flex;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 16px;
+}
+.avatar {
+    width: 100%;
+}
+.name {
+    margin-left: 18px;
+    font-size: 30px;
+    font-weight: 400;
+}

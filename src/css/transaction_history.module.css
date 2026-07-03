@@ -1,0 +1,56 @@
+@import "@fontsource/lato";
+
+:root {
+    --head: #00bcd5;
+    --head-text: #d4ffff;
+    --head-border: #8effff;
+    --body-1: #fff;
+    --body-2: #ecf1f4;
+    --body-text: #5f6366;
+    --body-border: #e4e4e4;
+    --shadow: #c6c6c6;
+}
+
+.transactionHistory {
+    margin: 61px auto;
+    border-radius: 2px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 2px 2px var(--shadow);
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+.head tr th, .body tr td {
+    width: 291px;
+    height: 50px;
+}
+.head {
+    background-color: var(--head);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--head-text);
+    font-size: 14px;
+}
+.body {
+    background-color: var(--body-1);
+    color: var(--body-text);
+}
+.body tr:nth-child(2n) {
+    background-color: var(--body-2);
+}
+.body tr td {
+    border-left: solid 1px var(--body-border);
+    border-right: solid 1px var(--body-border);
+}
+.head tr th {
+    border-left: solid 1px var(--head-border);
+    border-right: solid 1px var(--head-border);
+}
+.head tr th:first-child {
+    border-left: none;
+}
+.head tr th:last-child {
+    border-right: none;
+}
